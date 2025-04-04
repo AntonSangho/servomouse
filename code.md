@@ -24,15 +24,6 @@ def on_forever():
 basic.forever(on_forever)
 ```
 
-## 코드 설명
-
-이 코드는 간단하지만 몇 가지 중요한 부분이 있어요:
-
-1. `on_forever`: 계속 반복해서 실행되는 함수예요.
-2. `pins.analog_read_pin(AnalogReadWritePin.P1)`: P1 핀에 연결된 가변저항 값을 읽어요 (0부터 1023 사이의 값이 나와요).
-3. `Math.map(값, 0, 1023, 0, 180)`: 가변저항 값(0-1023)을 서보모터 각도(0-180)로 변환해요.
-4. `pins.servo_write_pin(AnalogPin.P2, 각도)`: P2 핀에 연결된 서보모터를 지정된 각도로 움직여요.
-
 ## 코드 업로드하는 방법
 
 1. 컴퓨터에서 [MakeCode 편집기](https://makecode.microbit.org/)를 열어요.
